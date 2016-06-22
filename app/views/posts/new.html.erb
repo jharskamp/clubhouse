@@ -1,0 +1,15 @@
+<h1>Write a new post!</h1>
+<div class= "posts">
+<%= form_for(:posts) do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+	<%= f.label :post %>
+	<%= f.text_field :post %>
+
+	<%= f.submit "Submit your story" %>
+
+	
+<% end %>
+	
+</div>

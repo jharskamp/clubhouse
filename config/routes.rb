@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'posts' => 'posts#new'
+
+  post 'posts' => 'posts#create'
+
+  get 'posts' => 'posts#index'
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   root 'pages#home'
   get 'signup' => 'users#new'
   resources :users
